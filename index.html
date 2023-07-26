@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Burst </title>
+    <!-- 
+        website icon
+     -->
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+    <!-- 
+        tailwind and daisy UI 
+    -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- 
+        custom style
+      -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              backgroundImage:{
+                  'hero-bg':"url('./images/banner1.png')",
+              }
+            }
+          }
+        }
+      </script>
+
+    <!-- 
+        google font lato 
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        .font-lato{
+            font-family: 'Lato', sans-serif;
+        }
+    </style>
+    
+</head>
+<body>
+    <header>
+        <nav class="max-w-6xl mx-auto bg-[#F85559] my-12 rounded-3xl">
+            <div class="navbar">
+                <div class="navbar-start">
+                  <div class="text-white pl-7 space-x-5 font-normal font-lato text-lg  mt-3  p-2   ">
+                    <a>Home</a>
+                    <a>About Us</a>
+                    <a>Shop</a>
+                    <a>All Fruits</a>
+                    
+                  </div>
+                </div>
+                <div class="navbar-center  ">
+                  <img src="./images/logo.png" alt="">
+                  <h3 class="font-bold font-lato text-white text-4xl pl-2">Fruit Burst</h3>
+                </div>
+                <div class="navbar-end">
+                  <input type="text" placeholder="Search here" class="input input-bordered w-full max-w-xs" disabled />
+                </div>
+              </div>
+        </nav>
+        <section class="max-w-6xl mx-auto">
+          <!-- slider or carousel -->
+          <div class="carousel w-full ">
+            <!-- slider 1 -->
+            <div id="slide1" class="carousel-item relative w-full">
+              <div class="hero min-h-screen" style="background-image: url(./images/banner1.png);">
+                <div class="hero-overlay bg-opacity-60"></div>
+                <div class="hero-content text-center text-neutral-content">
+                  <div class="max-w-md">
+                    <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your <br> doorstep</h1>
+                    <p class="mb-5">We supply highly quality organic products</p>
+                    <button class="btn border-0 text-white bg-[#F85559]">Shop Now</button>
+                  </div>
+                </div>
+              </div>
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide4" class="btn btn-circle">❮</a> 
+                <a href="#slide2" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <!-- slider 2 -->
+            <div id="slide2" class="carousel-item relative w-full">
+              <div class="hero min-h-screen" style="background-image: url(./images/banner2.png);">
+                <div class="hero-overlay bg-opacity-60"></div>
+                <div class="hero-content text-center text-neutral-content">
+                  <div class="max-w-md">
+                    <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your <br> doorstep</h1>
+                    <p class="mb-5">We supply highly quality organic products</p>
+                    <button class="btn border-0 text-white bg-[#F85559]">Shop Now</button>
+                  </div>
+                </div>
+              </div>
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide1" class="btn btn-circle">❮</a> 
+                <a href="#slide3" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <!-- slider 3  -->
+            <div id="slide3" class="carousel-item relative w-full">
+              <div class="hero min-h-screen" style="background-image: url(./images/banner3.png);">
+                <div class="hero-overlay bg-opacity-60"></div>
+                <div class="hero-content text-center text-neutral-content">
+                  <div class="max-w-md">
+                    <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your <br> doorstep</h1>
+                    <p class="mb-5">We supply highly quality organic products</p>
+                    <button class="btn border-0 text-white bg-[#F85559]">Shop Now</button>
+                  </div>
+                </div>
+              </div>
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide2" class="btn btn-circle">❮</a> 
+                <a href="#slide4" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <!-- slider 4 -->
+            <div id="slide4" class="carousel-item relative w-full">
+              <div class="hero min-h-screen" style="background-image: url(./images/banner4.png);">
+                <div class="hero-overlay bg-opacity-60"></div>
+                <div class="hero-content text-center text-neutral-content">
+                  <div class="max-w-md">
+                    <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your <br> doorstep</h1>
+                    <p class="mb-5">We supply highly quality organic products</p>
+                    <button class="btn border-0 text-white bg-[#F85559]">Shop Now</button>
+                  </div>
+                </div>
+              </div>
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide3" class="btn btn-circle">❮</a> 
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+          </div>
+        </section>
+    </header>
+    <main>
+      <!-- deal of the day -->
+      <section class="max-w-6xl mx-auto my-20">
+        <div class="flex justify-between">
+          <div>
+            <h2 class="font-extrabold font-lato text-5xl">Deal of the day</h2>
+            <p class="text-[#12121299] text-lg font-lato pt-2">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
+          </div>
+          <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+            <div class="flex flex-col">
+              <span class="countdown font-lato font-extrabold text-5xl">
+                <span style="--value:25;"></span>
+              </span>
+              <p class="text-[#12121299] text-lg font-lato">Days</p>
+            </div> 
+            <div class="flex flex-col">
+              <span class="countdown font-lato font-extrabold text-5xl">
+                <span style="--value:12;"></span>
+              </span>
+              <p class="text-[#12121299] text-lg font-lato">Hours</p>
+            </div> 
+            <div class="flex flex-col">
+              <span class="countdown font-lato font-extrabold text-5xl">
+                <span style="--value:29;"></span>
+              </span>
+              <p class="text-[#12121299] text-lg font-lato">Minutes</p>
+            </div> 
+            <div class="flex flex-col">
+              <span class="countdown font-lato font-extrabold text-5xl">
+                <span style="--value:16;"></span>
+              </span>
+              <p class="text-[#12121299] text-lg font-lato">Seconds</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html
